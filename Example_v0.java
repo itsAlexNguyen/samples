@@ -15,14 +15,14 @@ public class A {
     }
     
     public int test(){
-        return 15 + 26;
+        return 25 + 31;
     }
     
     public int test3(){
         return 999 - 25;
     }
     
-    public int test4(){
+    public int test5(){
         return 999 - 25;
     }
 }
