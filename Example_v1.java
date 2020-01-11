@@ -4,11 +4,11 @@ public class B {
     private static int third = 52;
 
     public B(){
-        B.first = 21;
+        B.first = 45;
     }
     
-    public int add(){
-        return B.first + B.second;
+    public int subtract(){
+        return B.first - B.second;
     }
     
     public int mult(){
