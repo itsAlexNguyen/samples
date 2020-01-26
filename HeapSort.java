@@ -8,17 +8,7 @@ package sample;
  *
  */
 public class Heap {
-	/**
-	 * heap sort (case-insensitive)
-	 * @param x array of subjects
-	 * @param y associated array
-	 * @param n problem size
-	 */
-	public static void sortHeap (String[] x, String[] y, int n ) {
-		this.construct(x,y,n);		
-		this.sort(x,y,n);
-	}
-	
+
 	/**
 	 * heap sort (case-insensitive)
 	 * @param x array of subjects
@@ -26,6 +16,17 @@ public class Heap {
 	 * @param n problem size
 	 */
 	public static void sortHeap (String[] x, Integer[] y, int n ) {
+		this.construct(x,y,n);		
+		this.sort(x,y,n);
+	}
+
+	/**
+	 * heap sort (case-insensitive)
+	 * @param x array of subjects
+	 * @param y associated array
+	 * @param n problem size
+	 */
+	public static void sortHeap (String[] x, String[] y, int n ) {
 		this.construct(x,y,n);		
 		this.sort(x,y,n);
 	}
