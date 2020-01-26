@@ -1,6 +1,4 @@
-package controller;
-
-import java.util.Random;
+package sample;
 
 public class A {
     private static int Z;

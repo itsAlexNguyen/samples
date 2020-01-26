@@ -14,7 +14,7 @@ public class Heap {
 	 * @param y associated array
 	 * @param n problem size
 	 */
-	public void sortHeap (String[] x, String[] y, int n ) {
+	public static void sortHeap (String[] x, String[] y, int n ) {
 		this.construct(x,y,n);		
 		this.sort(x,y,n);
 	}
@@ -25,7 +25,7 @@ public class Heap {
 	 * @param y associated array
 	 * @param n problem size
 	 */
-	public void sortHeap (String[] x, Integer[] y, int n ) {
+	public static void sortHeap (String[] x, Integer[] y, int n ) {
 		this.construct(x,y,n);		
 		this.sort(x,y,n);
 	}
@@ -36,7 +36,7 @@ public class Heap {
 	 * @param y associated array
 	 * @param n problem size
 	 */
-	private void construct(String[] x, String[] y, int n){
+	private static void construct(String[] x, String[] y, int n){
 
 		for (int i = (n-1)/2; i >= 0; i--){
 			int index = i;			
@@ -65,7 +65,7 @@ public class Heap {
 	 * @param y associated array
 	 * @param n problem size
 	 */
-	private void construct(String[] x, Integer[] y, int n){
+	private static void construct(String[] x, Integer[] y, int n){
 
 		for (int i = (n-1)/2; i >= 0; i--){
 			int index = i;			
@@ -94,7 +94,7 @@ public class Heap {
 	 * @param y associated array
 	 * @param n size of input array
 	 */
-	private void sort(String[] x, String[] y, int n){		
+	private static void sort(String[] x, String[] y, int n){		
 
 		int end = n - 1;
 		while (end > 0){
@@ -128,7 +128,7 @@ public class Heap {
 	 * @param y associated array
 	 * @param n size of input array
 	 */
-	private void sort(String[] x, Integer[] y, int n){		
+	private static void sort(String[] x, Integer[] y, int n){		
 
 		int end = n - 1;
 		while (end > 0){
@@ -156,7 +156,7 @@ public class Heap {
 		}
 	}
 
-	private String lower(String str){
+	private static String lower(String str){
 		String lowercase = "";
 		for (int i = 0; i < str.length(); i++){
 			lowercase += java.lang.Character.toLowerCase(str.charAt(i));
@@ -172,7 +172,7 @@ public class Heap {
 	 * @param a index of first element
 	 * @param b index of second element
 	 */
-	private void exchange(Comparable[] x, Comparable[] y, int a, int b){
+	private static void exchange(Comparable[] x, Comparable[] y, int a, int b){
 		Comparable temp = x[a];
 		x[a] = x[b];
 		x[b] = temp;
@@ -188,7 +188,7 @@ public class Heap {
 	 * @param n length of array
 	 * @return true if sorted, otherwise false
 	 */
-	private boolean isSorted(String[] x, int n){
+	private static boolean isSorted(String[] x, int n){
 		for (int i = 0; i < n - 1; i++){
 			if (lower(x[i]).compareTo(lower(x[i+1])) > 0) {
 				return false;			
