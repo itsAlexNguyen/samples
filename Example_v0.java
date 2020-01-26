@@ -1,19 +1,22 @@
-package controller;
-
-import java.util.Random;
+package sample;
 
 public class A {
-    private static int Z;
+    private int X;
 
     public A() {
-        A.Z = 5;
+        this.X = 5;
     }
 
     public int fcn(){
-        return A.Z * 5;
+        return this.X * 5;
     }
 
     public int test(){
-        return A.Z * 5;
+        return this.X * 5;
+    }
+
+    @Override
+    public String toString(){
+        return "A";
     }
 }
