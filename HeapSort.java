@@ -123,12 +123,6 @@ public class Heap {
 		}
 	}
 	
-	/**
-	 * Performs sortdown of a max-oriented heap to produce a sorted array
-	 * @param x input array organized as max-oriented heap
-	 * @param y associated array
-	 * @param n size of input array
-	 */
 	private static void sort(String[] x, Integer[] y, int n){		
 
 		int end = n - 1;
@@ -138,7 +132,6 @@ public class Heap {
 
 			exchange(x, y, 0, end);
 
-			//fix heap order by checking root node with child nodes and switching where necessary 
 			int i = 0;			
 			while (2*i+1 < end && 2*i+2 < end && ((lower(x[2*i+1]).compareTo(lower(x[i])) > 0) || (lower(x[2*i+2]).compareTo(lower(x[i])) > 0))){
 				//If at least one of the children is non-null and bigger				
