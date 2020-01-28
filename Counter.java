@@ -1,20 +1,23 @@
-package samples;
-
-import sl4j.logger.log;
+package sample;
 
 public class Counter {
-    private int value;
+    private static int value = 0;
 
-    public Counter() {
-        this.value = 0;
-        log.log("Counter created");
+    /**
+     * Creates a counter instance
+     * @return Counter instance
+     */
+    private Counter() {}
+
+    /**
+     * Increments the counter value
+     * @return counter value
+     */
+    public static int increment(){
+        return ++value;
     }
 
-    public int increment(){
-        return ++this.value;
-    }
-
-    public int reset(){
-        return this.value = 0;
+    public static void reset(){
+        value = 0;
     }
 }
