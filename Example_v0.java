@@ -1,3 +1,6 @@
+/**
+Class A that supports adding and subtracting
+*/
 public class A {
     private static int X;
     private static int Y = 5;
@@ -6,6 +9,10 @@ public class A {
         A.X = 5;
     }
     
+    /**Javadoc
+    Multiplication of field X and Y
+    @return int multiplication result
+    */
     public int fcn(){
         return A.X * A.Y;
     }
