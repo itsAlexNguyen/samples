@@ -6,6 +6,7 @@ public class A {
         A.X = 5;
     }
     
+    /** Javadoc for fcn **/
     public int fcn(){
         return A.X * A.Y;
     }
