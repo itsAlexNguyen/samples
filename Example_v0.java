@@ -6,7 +6,7 @@ public class A {
     private static int Z;
 
     public A() {
-        A.Z = 5;
+        A.Z = 6;
     }
 
     public int fcn(){
