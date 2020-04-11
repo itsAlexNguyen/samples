@@ -17,7 +17,7 @@ public class A {
         return A.X * A.Y;
     }
     
-    public int test(){
+    private int test(){
         return A.X * A.Y;
     }
     
