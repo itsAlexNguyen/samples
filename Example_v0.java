@@ -1,3 +1,5 @@
+package mypack;
+
 public class A {
     private static int X;
     private static int Y = 5;
@@ -25,5 +27,9 @@ public class A {
     
     public int test4(){
         return 999 - 25;
+    }
+    
+    public String printHello(){
+        return "Hello World!";
     }
 }
