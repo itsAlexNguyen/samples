@@ -1,14 +1,14 @@
 package samples;
 
 public class Counter {
-    public int value;
+    private int value;
 
     public Counter() {
         this.value = 4;
         log.log("Counter created");
     }
 
-    public int reset(){
+    private int reset(){
         return this.value = 0;
     }
     
