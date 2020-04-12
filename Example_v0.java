@@ -3,17 +3,17 @@ package controller;
 import java.util.Random;
 
 public class A {
-    private static int Z;
+    private static int val;
 
     public A() {
-        A.Z = 5;
+        A.val = 5;
     }
 
     public int fcn(){
-        return A.Z * 5;
+        return A.val * 5;
     }
 
-    public int test(){
-        return A.Z / 5;
+    protected int test(){
+        return A.val * 5;
     }
 }
