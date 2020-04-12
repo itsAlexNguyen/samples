@@ -14,6 +14,6 @@ public class A {
     }
 
     public int test(){
-        return A.Z * 6;
+        return A.Z / 5;
     }
 }
